@@ -1,5 +1,5 @@
 package HiberMap;
-
+//
 import javax.persistence.*;
 import java.sql.Timestamp;
 
