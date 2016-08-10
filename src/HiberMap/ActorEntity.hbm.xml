@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="HiberMap.ActorEntity" table="actor" schema="" catalog="sakila">
+        <id name="actorId">
+            <column name="actor_id" sql-type="smallint unsigned" not-null="true"/>
+        </id>
+        <property name="firstName">
+            <column name="first_name" sql-type="varchar" length="45" not-null="true"/>
+        </property>
+        <property name="lastName">
+            <column name="last_name" sql-type="varchar" length="45" not-null="true"/>
+        </property>
+        <property name="lastUpdate">
+            <column name="last_update" sql-type="timestamp" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
